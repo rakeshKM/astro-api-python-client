@@ -1,7 +1,8 @@
 import sdk
+import json
 
-userID = "<YourUserIdhere>"
-apiKey = "<YourApiKeyHere>"
+userID = "624889"
+apiKey = "2ce0bc7d506e41013577a8a550b82912"
 
 # create a male profile data
 maleData = {
@@ -37,5 +38,8 @@ client = sdk.AstrologyAPIClient(userID, apiKey)
 matchMakingData = client.matchMakingCall(resource, maleData, femaleData)
 
 # print response data recieved from api
-print(matchMakingData)
+loaded_json = json.loads(matchMakingData.text)
+
+print(loaded_json)  # <== prints json response.
+
 

@@ -1,8 +1,8 @@
 import sdk
 import json
 
-userID = "<USER_ID>"
-apiKey = "<API_KEY>"
+userID = "624889"
+apiKey = "2ce0bc7d506e41013577a8a550b82912"
 
 # make some dummy data in order to call astrology api
 data = {
